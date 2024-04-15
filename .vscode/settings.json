@@ -1,7 +1,15 @@
 {
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
-    "python.analysis.extraPaths": ["src", "tests"],
+    "python.analysis.extraPaths": [
+        "src",
+        "tests"
+    ],
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "python.analysis.typeCheckingMode": "basic",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#fbed80",
         "activityBar.background": "#fbed80",

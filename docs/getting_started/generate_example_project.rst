@@ -25,8 +25,8 @@ Activate the python virtual environment and use the project creator to generate 
 
 .. code-block:: powershell
 
-    .venv\Scripts\activate
-    pipenv run python src/project_creator/creator.py workspace --name MyProject --variant VARIANT --out_dir C:\tmp
+    .\.venv\Scripts\activate
+    poetry run python src/spl_core/project_creator/creator.py workspace --name MyProject --variant some/variant --out_dir C:\tmp
 
 This will create a new project in the directory ``MyProject``.
 
