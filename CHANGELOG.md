@@ -2,6 +2,23 @@
 
 
 
+## v4.1.0 (2024-04-15)
+
+### Feature
+
+* feat: add testrunner classes ([`e6f1142`](https://github.com/avengineers/spl-core/commit/e6f114236f5e19576cb65f18d0277a5139310f5a))
+
+### Fix
+
+* fix: add spl_core as dep of created projects ([`0ad3bd3`](https://github.com/avengineers/spl-core/commit/0ad3bd37b6b2f8504895e9254fe46f3523bb7b23))
+
+### Unknown
+
+* Merge pull request #128 from avengineers/123-fix-dependencies-of-spl_core-pypackage
+
+123 fix dependencies of spl core pypackage ([`6b50205`](https://github.com/avengineers/spl-core/commit/6b502050cc8d695fc1257a7fe8fe529a5877d41f))
+
+
 ## v4.0.0 (2024-04-02)
 
 ### Breaking
