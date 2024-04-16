@@ -27,7 +27,7 @@ class BaseVariantTestRunner(ABC):
 
     @property
     def expected_variant_report_artifacts(self) -> List[Path]:
-        return [Path("reports/reports/index.html")]
+        return [Path("reports/html/index.html")]
 
     @property
     def expected_component_report_artifacts(self) -> List[Path]:
@@ -39,23 +39,29 @@ class BaseVariantTestRunner(ABC):
             Path("coverage/index.html"),
         ]
 
+    def assert_artifact_exists(self, dir: Path, artifact: Path) -> None:
+        if artifact.is_absolute():
+            assert artifact.exists(), f"Artifact {artifact} does not exist"  # noqa: S101
+        else:
+            assert Path.joinpath(dir, artifact).exists(), f"Artifact {Path.joinpath(dir, artifact)} does not exist"  # noqa: S101
+
     def test_build(self) -> None:
         spl_build: SplBuild = SplBuild(variant=self.variant, build_kit="prod")
         assert 0 == spl_build.execute(target="all")  # noqa: S101
         for artifact in self.expected_build_artifacts:
-            assert artifact.exists() or Path.joinpath(spl_build.build_dir, artifact).exists()  # noqa: S101
+            self.assert_artifact_exists(dir=spl_build.build_dir, artifact=artifact)
 
     def test_unittest(self) -> None:
         spl_build: SplBuild = SplBuild(variant=self.variant, build_kit="test")
         assert 0 == spl_build.execute(target="unittests")  # noqa: S101
         for artifact in self.expected_test_artifacts:
-            assert artifact.exists()  # noqa: S101
+            self.assert_artifact_exists(dir=spl_build.build_dir, artifact=artifact)
 
     def test_reports(self) -> None:
         spl_build: SplBuild = SplBuild(variant=self.variant, build_kit="test")
         assert 0 == spl_build.execute(target="all")  # noqa: S101
         for artifact in self.expected_variant_report_artifacts:
-            assert Path.joinpath(spl_build.build_dir, artifact).exists()  # noqa: S101
+            self.assert_artifact_exists(dir=spl_build.build_dir, artifact=artifact)
         for component in self.component_paths:
             for artifact in self.expected_component_report_artifacts:
-                assert Path.joinpath(spl_build.build_dir, component, artifact).exists()  # noqa: S101
+                self.assert_artifact_exists(dir=Path.joinpath(spl_build.build_dir, "reports", "html", spl_build.build_dir, component, "reports"), artifact=artifact)
