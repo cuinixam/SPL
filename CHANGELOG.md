@@ -2,6 +2,23 @@
 
 
 
+## v4.1.1 (2024-04-17)
+
+### Documentation
+
+* docs: update SPLE glossary with latest workshop outcome ([`c1e51db`](https://github.com/avengineers/spl-core/commit/c1e51db995b393faa353eabf050d27c0310ea6b9))
+
+### Fix
+
+* fix: adapt artifacts pathes ([`9a5d9fe`](https://github.com/avengineers/spl-core/commit/9a5d9fec04c08c82a55200dce2b818a229724fa9))
+
+### Unknown
+
+* Merge pull request #131 from avengineers/130-base_variant_test_runner-not-working-in-spled
+
+fix: adapt artifacts pathes ([`bdae97a`](https://github.com/avengineers/spl-core/commit/bdae97a3cb257e07f72d5e71aa0583a1f7d34176))
+
+
 ## v4.1.0 (2024-04-15)
 
 ### Feature
