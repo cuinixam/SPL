@@ -9,6 +9,14 @@ class Test_SomeVariant(BaseVariantTestRunner):
         assert self.variant == "SomeVariant"
 
     @property
+    def create_artifacts_archive(self):
+        return False
+
+    @property
+    def create_artifacts_json(self):
+        return False
+
+    @property
     def component_paths(self):
         return [Path("component1"), Path("component2")]
 
