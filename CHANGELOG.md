@@ -2,6 +2,19 @@
 
 
 
+## v4.1.2 (2024-04-18)
+
+### Fix
+
+* fix: add creation of artifacts to spl_build ([`e4f3d17`](https://github.com/avengineers/spl-core/commit/e4f3d17d363a5219250bed4d3ff073cb2da89b5c))
+
+### Unknown
+
+* Merge pull request #135 from avengineers/133-integrate-creation-of-artifacts
+
+fix: add creation of artifacts to spl_build ([`725fb18`](https://github.com/avengineers/spl-core/commit/725fb1888e6ee392c24e16409755492aca3e4c75))
+
+
 ## v4.1.1 (2024-04-17)
 
 ### Documentation
