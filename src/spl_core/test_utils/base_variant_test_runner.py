@@ -39,6 +39,18 @@ class BaseVariantTestRunner(ABC):
             Path("coverage/index.html"),
         ]
 
+    @property
+    def create_artifacts_archive(self) -> bool:
+        return True
+
+    @property
+    def create_artifacts_json(self) -> bool:
+        return True
+
+    @property
+    def expected_archive_artifacts(self) -> List[Path]:
+        return self.expected_build_artifacts
+
     def assert_artifact_exists(self, dir: Path, artifact: Path) -> None:
         if artifact.is_absolute():
             assert artifact.exists(), f"Artifact {artifact} does not exist"  # noqa: S101
@@ -50,6 +62,11 @@ class BaseVariantTestRunner(ABC):
         assert 0 == spl_build.execute(target="all")  # noqa: S101
         for artifact in self.expected_build_artifacts:
             self.assert_artifact_exists(dir=spl_build.build_dir, artifact=artifact)
+        if self.create_artifacts_archive:
+            # create artifacts archive
+            spl_build.create_artifacts_archive(self.expected_archive_artifacts)
+        if self.create_artifacts_json:
+            spl_build.create_artifacts_json(self.expected_archive_artifacts)
 
     def test_unittest(self) -> None:
         spl_build: SplBuild = SplBuild(variant=self.variant, build_kit="test")
