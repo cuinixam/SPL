@@ -2,6 +2,17 @@
 
 
 
+## v4.2.0 (2024-04-29)
+
+### Documentation
+
+* docs: generate project using the init command ([`e75c02e`](https://github.com/avengineers/spl-core/commit/e75c02e383cf534358387ac8e8960b948b70cb13))
+
+### Feature
+
+* feat: add command to kickstart new project ([`375fb05`](https://github.com/avengineers/spl-core/commit/375fb050c3c993eb5f0a1ec6f8888d77e57b5c83))
+
+
 ## v4.1.2 (2024-04-18)
 
 ### Fix
