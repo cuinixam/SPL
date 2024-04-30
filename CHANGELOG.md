@@ -2,6 +2,13 @@
 
 
 
+## v4.3.0 (2024-04-30)
+
+### Feature
+
+* feat: create please script ([`46f57fa`](https://github.com/avengineers/spl-core/commit/46f57faa01a7525aa8cc7775b3152ccfa25ddb8b))
+
+
 ## v4.2.0 (2024-04-29)
 
 ### Documentation
