@@ -2,6 +2,17 @@
 
 
 
+## v4.4.0 (2024-04-30)
+
+### Documentation
+
+* docs: update readme and example project generation ([`c19e220`](https://github.com/avengineers/spl-core/commit/c19e22052e9f8ecd9a15b0af16a8c4bb6d0f6f92))
+
+### Feature
+
+* feat: add linker config to model file ([`eb06294`](https://github.com/avengineers/spl-core/commit/eb06294a3e28c2981a2165d352f505051ec61493))
+
+
 ## v4.3.0 (2024-04-30)
 
 ### Feature
