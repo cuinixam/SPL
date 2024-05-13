@@ -2,6 +2,13 @@
 
 
 
+## v4.4.1 (2024-05-13)
+
+### Fix
+
+* fix: solve exception with CommandLineExecutor ([`3a1f6d0`](https://github.com/avengineers/spl-core/commit/3a1f6d0bf0096f3296a19f567c6acefe152d712e))
+
+
 ## v4.4.0 (2024-04-30)
 
 ### Documentation
