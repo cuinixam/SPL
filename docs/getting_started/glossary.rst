@@ -88,7 +88,7 @@ CI is a software development practice to integrate frequent and small software c
 Feature Model
 -------------
 
-A feature model represents the organization of all potential features in an SPL, showing how they relate and depend on each other.
+A feature model represents the organization of all potential features in an :ref:`SPL <glossary_spl>`, showing how they relate and depend on each other.
 This model guides the creation of different SPL :ref:`variants <glossary_variant>`, ensuring that feature combinations are viable and consistent.
 
 Think of a feature model like a big chart showing all the different features you can choose from to customize your car.
@@ -109,7 +109,7 @@ If a ``config.txt`` file is present in the :ref:`variant <glossary_variant>` dir
 Pipeline
 --------
 
-A pipeline is a directed graph of  :ref:`steps <glossary_step>` with a single entry point and a single exit point. The :ref:`steps <glossary_step>` are executed in a specific order.
+A pipeline is a directed graph of :ref:`steps <glossary_step>` with a single entry point and a single exit point. The :ref:`steps <glossary_step>` are executed in a specific order.
 
 
 .. _glossary_platform:
