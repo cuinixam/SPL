@@ -2,6 +2,17 @@
 
 
 
+## v4.5.0 (2024-08-01)
+
+### Documentation
+
+* docs: include readme + changelog ([`11764cd`](https://github.com/avengineers/spl-core/commit/11764cdd903cafb2aa6b23b6cc1a4cd9175a5762))
+
+### Feature
+
+* feat: update deps, hammocking 0.3.0 ([`55fbe74`](https://github.com/avengineers/spl-core/commit/55fbe74f2a1b5045c76fba512a9578c1e1f5d287))
+
+
 ## v4.4.1 (2024-05-13)
 
 ### Fix
