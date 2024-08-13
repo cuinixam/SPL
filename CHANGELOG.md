@@ -2,6 +2,13 @@
 
 
 
+## v4.6.0 (2024-08-13)
+
+### Feature
+
+* feat: create build.json with component info ([`0e35f94`](https://github.com/avengineers/spl-core/commit/0e35f94a347e8b08acd9ceb2228d3a233eaf2d46))
+
+
 ## v4.5.0 (2024-08-01)
 
 ### Documentation
