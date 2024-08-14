@@ -2,6 +2,13 @@
 
 
 
+## v4.6.1 (2024-08-14)
+
+### Fix
+
+* fix: create build info by default ([`aa275c4`](https://github.com/avengineers/spl-core/commit/aa275c4468cb5081956f38301de7be3ecac57b78))
+
+
 ## v4.6.0 (2024-08-13)
 
 ### Feature
