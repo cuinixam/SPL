@@ -2,6 +2,13 @@
 
 
 
+## v5.0.0 (2024-09-23)
+
+### Breaking
+
+* feat!: disable inlining and keep inline function in build kit &#34;test&#34; (#156) ([`5ec41e2`](https://github.com/avengineers/spl-core/commit/5ec41e2370a366217e880a43c8ef4f843836ac30))
+
+
 ## v4.6.1 (2024-08-14)
 
 ### Fix
