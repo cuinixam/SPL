@@ -2,6 +2,25 @@
 
 
 
+## v6.0.0 (2024-10-30)
+
+### Breaking
+
+* feat!: support components without sources ([`a81f5e8`](https://github.com/avengineers/spl-core/commit/a81f5e88f81f97218dd39ed28a764714211f76f8))
+
+### Feature
+
+* feat: add spl_add_external_component() ([`b71e4f7`](https://github.com/avengineers/spl-core/commit/b71e4f75cbfa9f7897d8aadcadc2d5941949f496))
+
+* feat: add spl_add_named_component() ([`7614a2e`](https://github.com/avengineers/spl-core/commit/7614a2edf829e17999c4632fceb1cbdbcb3c31d5))
+
+### Unknown
+
+* Revert &#34;feat: add spl_add_external_component()&#34;
+
+This reverts commit 91aae3e626355ef872e010fc6aeeb33f5ffc24d8. ([`1097c64`](https://github.com/avengineers/spl-core/commit/1097c64eae04377d6777435d730186e7dbb46b80))
+
+
 ## v5.0.0 (2024-09-23)
 
 ### Breaking
