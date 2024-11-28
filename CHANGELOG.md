@@ -2,6 +2,13 @@
 
 
 
+## v6.1.0 (2024-11-28)
+
+### Feature
+
+* feat: add support for absolute paths to spl_add_named_component() ([`d4e3578`](https://github.com/avengineers/spl-core/commit/d4e35782f2149ce948d242975e2b013bb0aa126c))
+
+
 ## v6.0.0 (2024-10-30)
 
 ### Breaking
