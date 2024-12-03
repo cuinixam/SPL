@@ -2,6 +2,13 @@
 
 
 
+## v6.1.1 (2024-12-03)
+
+### Fix
+
+* fix: make disabling of inline and static functions configurable ([`ccfeeec`](https://github.com/avengineers/spl-core/commit/ccfeeeca495d867848368e8ee583f0f966048eba))
+
+
 ## v6.1.0 (2024-11-28)
 
 ### Feature
