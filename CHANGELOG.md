@@ -2,6 +2,13 @@
 
 
 
+## v6.2.0 (2024-12-20)
+
+### Feature
+
+* feat: add marker to base test runner ([`0b69db3`](https://github.com/avengineers/spl-core/commit/0b69db37069ba11cf9520942b8c0d4859714953f))
+
+
 ## v6.1.1 (2024-12-03)
 
 ### Fix
